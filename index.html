@@ -4,19 +4,22 @@
         <title>Movie Review Page</title>
         <link rel="stylesheet" href="styles.css">
     <body background="images\background.png">
-        
-        <img src="images\banner.png" alt="Banner">
-        <h1>TMNT (2007)</h1>
+        <section class="main-banner">
+            <img class="banner" src="images\banner.png" alt="Banner">
+            <img src="images\bannerbackground.png" alt="Banner">
+        </section>
+        <h1 class="title">TMNT (2007)</h1>
 
         <section class="movie-section">
 
+            <!-- Cell A1-A2 -->
             <section class="rotten-banner">
                 <img src="images\rottenbig.png" alt="">
-                <!-- <img class="background" src="images\rottenbackground.png" alt=""> -->
                 <h1>32%</h1>
                 <p>(88 reviews total)</p>
             </section>
 
+            <!-- Cell B1, B2, C1, C2 -->
             <section class="review-container">
                 <section class="review">
                     <div class="review-text">
@@ -27,13 +30,14 @@
                     </div>
                     <div class="author">
                         <img src="images\critic.gif" alt="">
+                        <p>Melvin Dacanay</p>
                     </div>
                 </section>
                 <section class="review">
                     <div class="review-text">
                         <img src="images\rotten.gif" alt="">
                         <p>
-                            "Ditching the cheeky, self-aware wink that helped to exuse the concept's inherent corniness, the movie attempts to look polished and 'cool', but the been-there animation can't compete witht he then-cutting-edge puppetry of the 1990 live-action movie"
+                            "Ditching the cheeky, self-aware wink that"
                         </p>
                     </div>
                     <div class="author">
@@ -51,59 +55,27 @@
                         <img src="images\critic.gif" alt="">
                     </div>
                 </section>
-
             </section>
 
-            <section class="movie-info">  
+            <!-- Cell A3, B3 -->
+            <div class="cell">
                 <img src="images\generaloverview.png" alt="">
-            <div class="info-text">
-                <h4>STARRING</h4>                             
-                Mako                                   
-                Sarah Michelle Gellar                                 
-                <h4>
-                    DIRECTOR                                
-                </h4>
-                Kevin Munroe    
-                <h4>                            
-                    RATING                                                                    
-                </h4>                            
-                PG
-                <h4>                            
-                    THEATRICAL RELEASE                                                                
-                </h4>                                                       
-                Mar23, 2007                                   
-                <h4>                            
-                    MOVIE SYNOPISIS                                                                
-                </h4>                                                         
-                After the defeat of their old arch 
-                <br><br>
-                nemesis, The Shredder, the Turtles have 
-                <br><br>
-                grown apart as a family.                                   
-                <h4>                            
-                    RELEASE COMPANY                                                              
-                </h4>                                                          
-                Warner Bros.                                    
-                <h4>                            
-                    MAPP RATING                                                            
-                </h4>                                          
-                PG, for animated action violence, 
-                <br><br>
-                some scary cartoon images and mild 
-                <br><br>
-                language
-                <h4>                            
-                    GENRE                                                           
-                </h4>                                                        
-                Action/Adventure, Comedies, 
-                Childrens, Martial Atrts, Superheroes, 
-                Ninjas, Animated Characters                                
-                <h4>                            
-                    OFFICIAL MOVIE SITE                                                            
-                </h4>                                                          
-                The offical TMNT Site
             </div>
-            </section>
+
+            <!-- Cell C3 -->
+            <p class="movie-info">
+                <strong>STARRING</strong> Mako, Sarah Michelle Gellar<br>
+                <strong>DIRECTOR</strong> Kevin Munroe<br>
+                <strong>RATING</strong> PG<br>
+                <strong>THEATRICAL RELEASE</strong> Mar 23, 2007<br>
+                <strong>MOVIE SYNOPSIS</strong> After the defeat of their old arch nemesis, The Shredder, the Turtles have grown apart as a family.<br>
+                <strong>RELEASE COMPANY</strong> Warner Bros.<br>
+                <strong>MPAA RATING</strong> PG, for animated action violence, some scary cartoon images and mild language<br>
+                <strong>GENRE</strong> Action/Adventure, Comedies, Childrens, Martial Arts, Superheroes, Ninjas, Animated Characters<br>
+                <strong>OFFICIAL MOVIE SITE</strong> The official TMNT Site
+            </p>
+            
+            <!-- Cell D1-3 -->
             <div class="page">(1-8) of 88</div>
         </section>       
     </body>
