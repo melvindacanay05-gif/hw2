@@ -1,3 +1,8 @@
+/* name: Melvin Dacanay 
+section: Web Programming DSCI4370
+file details: Css stylesheet */
+
+
 body .banner, body .title{
     text-align: center;
 }
@@ -5,16 +10,19 @@ body .banner, body .title{
 .main-banner{
     background-image: url("images/bannerbackground.png");
     width: 1500px;
+    width: 100%;
+    place-self: center;
 }
 
 .movie-section {
     border: 2px solid black;
-    background-color: green;
+    background-color: #A2B964;
     display: grid;  
     width: 100%;
     max-width: 800px;
-    grid-template-columns: 275px 275px 275px;
+    grid-template-columns: 550px 250px;
     grid-template-rows: 83px 329px 451px 30px;
+    place-self: center;
 }
 
 /* review title banner */
@@ -35,15 +43,19 @@ body .banner, body .title{
 .rotten-banner h1{
     z-index: 1000;
     color: red;
-    font-size: 60px;
+    font-size: 48pt;
     position: relative;
-    bottom: 20px;
+    font-weight: 700;
+    bottom: 30px;
+    font-family: sans-serif;
 }
 
 .rotten-banner p{
     z-index: 1000;
     position: relative;
-    top: 40px;
+    font-size: 8pt;
+    color: white;
+    top: 50px;
 }
 
 /* review container */
@@ -56,27 +68,26 @@ body .banner, body .title{
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
 
-    /* width: 100%; */
-    flex-shrink: 1;
     padding: 10px;
     gap: 10px;
     flex-wrap: wrap;
 }
 
 .review {
-    width: 48%;
+    width: 47%;
     box-sizing: border-box;
     height: fit-content;
 }
 
 .review-text{
-    border: 2px solid black;
-    background-color: blanchedalmond;
-    padding: 10px;
+    border: 4px solid grey;
+    background-color: #E1D697;
+    padding: 8px;
     justify-content:flex-start;
-    font-size: x-small;
+    font-size: 8pt;
+    font-weight: 600;
 }
 
 .review-text img {
@@ -90,7 +101,8 @@ body .banner, body .title{
     justify-content: left;
     height: 50px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 8pt;
 }
 
 .author p{
@@ -98,35 +110,61 @@ body .banner, body .title{
     bottom: 15px;
 }
 
+.author img{
+    width: 40px;
+    height: 40px;
+}
+
 
 /* movie info */
 
-.cell img{
+.cell{
     display: flex;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
-    /* width: 100%; */
-    flex-shrink: 1;
+    grid-row-end: 2;
+    width: 100%;
 }
 
 .movie-info{
     display: flex;
     flex-direction: column;
     justify-self: stretch;
-    grid-column-end: 4;
+    grid-column-start: 2;
     grid-row-start: 3;
-    width: 90%;
-    font-size: 80%;
+    grid-row-end: 4;
+    width: 100%;
+    font-size: 8pt;
     line-height: 150%;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.movie-info dt {
+    font-weight: 700;
 }
 
 /* bottom */
 
 .page{
     grid-row-start: 4;
-    grid-column-start: 2;
-    align-self: center;
+    grid-column-start: 1;
+    grid-column: span 3;
     text-align: center;
     position: relative;
+    background-color: #A2B964;
+}
+
+@media (max-width: 700px){
+    .movie-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 83px 1fr 1fr 30px;
+        grid-template-columns: auto auto;
+        width: 100%;
+        place-self: center;
+    }
+    .review {
+        width: 100%;
+    }
+
 }
