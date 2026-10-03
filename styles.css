@@ -12,7 +12,8 @@ body .banner, body .title{
 
 .main-banner{
     background-image: url("images/bannerbackground.png");
-    width: 1500px;
+    background-repeat: repeat-x;
+    /* width: 1500px; */
     width: 100%;
     place-self: center;
 }
@@ -24,6 +25,7 @@ body .banner, body .title{
     width: 100%;
     max-width: 800px;
     grid-template-columns: 550px 250px;
+    /* grid-template-columns: .6875fr .3125fr; */
     grid-template-rows: 83px 329px 451px 30px;
     place-self: center;
 }
@@ -173,14 +175,19 @@ body .banner, body .title{
 
 @media (max-width: 700px){
     .movie-section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 83px 1fr 1fr 30px;
-        grid-template-columns: auto auto;
+        display: grid;
+        grid-template-rows: 83px 329px auto 30px;
+        background-color: #A2B964;
+    }
+    .rotten-banner, 
+    .review-container, 
+    .cell, 
+    .movie-info, 
+    .page {
         width: 100%;
-        place-self: center;
+        box-sizing: border-box;
     }
     .review {
         width: 100%;
     }
-
 }
